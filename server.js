@@ -12,6 +12,7 @@ connectDB();
 app.use(cors()); // use CORS middleware
 
 app.use(bodyParser.json());
+///app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", routes);
 app.use("/test", (req, res) => {
   res.send("Welcome to the Restaurant API");
